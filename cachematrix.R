@@ -36,20 +36,3 @@ cacheSolve <- function(x, ...) {
 	x$setinverse(inv)
 	inv
 }
-
-# Testing 
-
-x = matrix(c(1,2,2,3),nrow=2,ncol=2);
-class(x)
-x
-#     [,1] [,2]
-#[1,]    1    2
-#[2,]    2    3
-
-x_list = makeCacheMatrix(x);
-x_list 
-cacheSolve(x_list);
-#     [,1] [,2]
-#[1,]   -3    2
-#[2,]    2   -1
-
